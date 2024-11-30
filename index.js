@@ -12,8 +12,8 @@ const bot = new TelegramBot(TOKEN, { polling: {
     } });
 
 
-const STICKERS_FILE = '.stickers.json';
-const DICT_FILE = '.dictionary.json';
+const STICKERS_FILE = './stickers.json';
+const DICT_FILE = './dictionary.json';
 const CHATS_FILE = './data/chats.json';
 
 function createRegExp(words) {
