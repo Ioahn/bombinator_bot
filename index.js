@@ -12,9 +12,9 @@ const bot = new TelegramBot(TOKEN, { polling: {
     } });
 
 
-const STICKERS_FILE = './stickers.json';
-const DICT_FILE = './dictionary.json';
-const CHATS_FILE = './chats.json';
+const STICKERS_FILE = '.stickers.json';
+const DICT_FILE = '.dictionary.json';
+const CHATS_FILE = './data/chats.json';
 
 function createRegExp(words) {
     // Экранируем специальные символы и создаём регулярное выражение
@@ -100,7 +100,7 @@ const spamers = new Map();
 class Rating {
     ids = []
     entities = new Map()
-    filePath = path.resolve(__dirname, 'rating.json');
+    filePath = path.resolve(__dirname, 'data/rating.json');
 
     constructor() {
        this.loadFromFile()
