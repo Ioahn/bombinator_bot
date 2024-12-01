@@ -4,7 +4,7 @@ const path = require('path');
 const {createChainAdapter} = require('./utils/chainAdapter')
 
 // Вставьте ваш токен от BotFather
-const TOKEN = '7934869419:AAGTYwFZAHk8vDSuHIhR_lERC4aM5b-1RV0';
+const TOKEN = '7555537046:AAFSBPiEs0416TFVMS9GE02-Dt9CXJfL0sA';
 const bot = new TelegramBot(TOKEN, {
     polling: {
         params: {
